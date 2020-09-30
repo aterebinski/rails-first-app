@@ -8,6 +8,6 @@ class Comment < ApplicationRecord
   private
 
   def check_author
-    self.author = self.author.titleize
+    self.author = self.author.to_s.titleize
   end
 end
